@@ -1,0 +1,22 @@
+coder.updateBuildInfo('addIncludePaths','C:\Users\mawal\Downloads\unifiGFMLibrary\trunk\include');
+coder.updateBuildInfo('addSourcePaths','C:\Users\mawal\Downloads\unifiGFMLibrary\trunk\source');
+coder.updateBuildInfo('addSourceFiles','compensators.c');
+coder.updateBuildInfo('addSourceFiles','primaryControl.c');
+coder.updateBuildInfo('addSourceFiles','transformations.c');
+coder.updateBuildInfo('addSourceFiles','vectorControl.c');
+
+
+
+
+
+For interface.c file
+#include "vectorControl.h"
+
+initialization task
+stop_vectorControl((unsigned char) 1);
+
+control_isr
+update_vectorControl(fb, ctrlOut, dbIn, dbOut);
+
+status monitor
+update_dispatchMonitor(dispatch, status);
